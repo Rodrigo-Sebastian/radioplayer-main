@@ -1,0 +1,57 @@
+- What is OWASP and what is its primary mission as described in the article?
+OWASP står för Open Web Application Security Project.
+OWASP är en internationell ideel organisation dedikerad till webbapplikationssäkerhet.
+
+
+- Explain the concept of "Injection". Provide an example of how an injection attack could compromise a web application's security.
+OWASP injektion eller "injection" innebär en träff av opålitlig data som skickas till kodtolkaren genom en formulärinmatning
+eller annat datainlämning till webbapplikationen. exempel på detta kan vara en SQL- databaskod.
+
+
+- Explain two strategies to prevent Broken Authentication vulnerabilities.
+användning av en stark autentiseringsmetod, med detta menas en säker och stark autentiseringsmetod som lösenordsriktlinjer och
+spärr av konton vid flera misslyckade inloggningsförsök.
+
+en implemintering av sessionstyrning och säkerhetshanteringsmetoder, alltså att sessioner hanteras med säkerhet
+cookies är en samt rättighetskontroller för att se till att användaren bara har åtkomst till de resurser de behöver.
+
+- Describe the potential consequences of Insecure Deserialization in web applications. How can developers protect against such attacks?
+insecure deserialization innebär att skadlig kod injiceras och utförs när data deserialiseras i en applikation.
+detta kan leda till fjärrkörning av kommandon, förändring av objekt eller programlogik.
+en utvecklare kan skydda sig genom att använda validering, signering och kryptering av serialiserad data samt att begränsa
+åtkomsten till deserialiseringsfunktioner.
+
+- Briefly define Cross-Site Scripting (XSS) as outlined in the article and list two methods suggested in the article to prevent XSS attacks in web applications.
+cross-site scripting (XSS) 'r en sårbarhet där angripare injicerar skadlig kod inom javascript i webbsidans innehåll som sedan
+körs i användarens webbläsare.
+
+två metoder för att förhindra dessa XSS attacker är följande:
+- en input validation och output encoding. detta validerar och filtrerar användarinput samt koda utdata som kan 
+neutralisera skadlig kod.
+
+- en användning av säkerhetsmekanismer som CSP - content security policy
+detta kan begränsa risker för XSS attacker genom att utvecklaren specificera vilka källor till innehåll är tillåtna att
+laddas och löras på webbsidan.
+
+FOR UXF - WCAG:
+- Explain the importance of semantic elements in web development according to accessibility guidelines. Provide examples of at least two semantic HTML elements and clarify how they enhance accessibility for users with disabilities.
+Semantiska HTML element har ne viktig roll för tillgänglighet genom att ge struktur till en webbsida.
+två exempel på semantisak element är header och nav inom <> alltså <header> & <nav> dessa bidrar med en tydligstruktur
+för navigation i meny fliken i en hemsida.
+
+- Describe the significance of color contrast in web design concerning accessibility. How does adhering to color contrast guidelines benefit users with visual impairments, and what are the recommended contrast ratios as per WCAG standards?
+färgkontraster är viktiga för användare, eftersom det påverkar läsbarhet och synlighet på en webbsida.
+enligt WCAG-standarden ska användaren säkerställa en tillräckligt kontrast mellan text och bakgrund. här rekomenderas
+en kontrastförhållande på minst 4,5:1 för normal text och 3:1 för stor och fet text.
+
+-Discuss the role of alternative text (alt text) for images in accordance with accessibility guidelines. Why is it crucial to include descriptive alt text, and how does this contribute to making web content more accessible? Provide examples to illustrate your explanation.
+alternativ text eller (alt text) är viktigt och spelar en stor roll för bilder som inte laddar eller är kompatibla med en vis webbbrowser.
+detta beskriver innehållet inom img taggen.
+
+- Explain the purpose of landmarks in creating accessible web content. How do landmarks aid in navigation for users of assistive technologies, and can you provide examples of commonly used landmark elements in HTML?
+landmärke/landmark innebär sådan HTML element som definerar och skiljer olika avsnitt i en webbsida.
+dessa är <header>, <nav>, <main> <section> <footer>. detta underlättar navigeringen och skärmläsaren geno matt ge struktur och tydlighet.
+
+- Describe the significance of proper form labeling. Why is it important to label form elements, and what strategies can developers implement to ensure effective labeling for improved accessibility?
+Det är viktig med rätt märkning av formulär för en bra användbarhet och tillgänglighet. att använda <label> med rätt koppling till 
+formulärfältet hjälper användaren att förstå vilken information som förväntas.
